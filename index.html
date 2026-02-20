@@ -3,115 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bishal Karki - Resume</title>
+    <title>BISHAL KARKI - Resume</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f4; }
-        .resume-card { background: #fff; padding: 40px; border-top: 10px solid #5d4037; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        header { text-align: center; border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 20px; }
-        h1 { margin: 10px 0 5px 0; color: #5d4037; text-transform: uppercase; letter-spacing: 2px; }
-        .job-title { font-weight: bold; color: #777; font-size: 1.2em; margin-bottom: 15px; }
-        .contact-info { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; font-size: 0.9em; }
-        .contact-info a { text-decoration: none; color: #007bff; font-weight: 500; }
-        .contact-info a:hover { text-decoration: underline; }
-        section { margin-bottom: 30px; }
-        h2 { border-left: 5px solid #5d4037; padding-left: 10px; color: #5d4037; text-transform: uppercase; font-size: 1.1em; margin-bottom: 15px; }
-        .item { margin-bottom: 20px; }
-        .item-header { display: flex; justify-content: space-between; font-weight: bold; }
-        .sub-text { font-style: italic; color: #666; }
+        :root {
+            --sidebar-bg: #8d6e63; /* Matches the brown tone in your PDF */
+            --text-main: #333;
+            --text-light: #ffffff;
+        }
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background: #555; display: flex; justify-content: center; }
+        
+        .resume-container { 
+            background: white; 
+            width: 900px; 
+            min-height: 1100px; 
+            display: flex; 
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            margin: 40px 0;
+        }
+
+        /* Sidebar Styling */
+        .sidebar { 
+            width: 35%; 
+            background-color: var(--sidebar-bg); 
+            color: var(--text-light); 
+            padding: 40px 25px; 
+        }
+        .profile-img { 
+            width: 160px; 
+            height: 160px; 
+            border-radius: 50%; 
+            border: 5px solid white; 
+            display: block; 
+            margin: 0 auto 30px;
+            object-fit: cover;
+            background: #eee;
+        }
+        .sidebar h2 { 
+            border-bottom: 1px solid rgba(255,255,255,0.3); 
+            padding-bottom: 10px; 
+            font-size: 1.2em; 
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+        .contact-link { 
+            display: block; 
+            color: white; 
+            text-decoration: none; 
+            margin-bottom: 15px; 
+            font-size: 0.9em;
+        }
+        .contact-link:hover { text-decoration: underline; }
+        .sidebar-item { margin-bottom: 20px; font-size: 0.9em; line-height: 1.4; }
+
+        /* Main Content Styling */
+        .main-content { 
+            width: 65%; 
+            padding: 50px 40px; 
+            color: var(--text-main); 
+        }
+        .header-section { border-bottom: 2px solid var(--sidebar-bg); padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 2.8em; letter-spacing: 2px; color: #000; }
+        .title { font-size: 1.4em; color: var(--sidebar-bg); font-weight: bold; letter-spacing: 4px; }
+        
+        h3 { color: var(--sidebar-bg); text-transform: uppercase; border-bottom: 1px solid #eee; padding-bottom: 5px; margin-top: 30px; }
+        .exp-item { margin-bottom: 25px; }
+        .exp-row { display: flex; justify-content: space-between; font-weight: bold; }
+        .location-text { font-style: italic; color: #666; font-size: 0.9em; margin-bottom: 8px; }
+        
         ul { padding-left: 20px; }
-        .skills-tag { display: inline-block; background: #eee; padding: 5px 12px; border-radius: 20px; margin: 5px; font-size: 0.85em; }
-        @media (max-width: 600px) { .item-header { flex-direction: column; } .resume-card { padding: 20px; } }
+        li { margin-bottom: 8px; font-size: 0.95em; line-height: 1.5; }
+
+        @media print {
+            body { background: white; }
+            .resume-container { margin: 0; box-shadow: none; width: 100%; }
+        }
     </style>
 </head>
 <body>
 
-<div class="resume-card">
-    <header>
-        <h1>Bishal Karki</h1>
-        <div class="job-title">Cashier</div>
-        <div class="contact-info">
-            <a href="mailto:k.bishal@hotmail.com">📩 k.bishal@hotmail.com</a>
-            <a href="tel:+9779818852021">📞 +977 9818852021</a>
-            <a href="https://wa.me/9779818852021" target="_blank">💬 WhatsApp</a>
-            <a href="https://www.google.com/maps/search/?api=1&query=Birtamode,+Jhapa,+Nepal" target="_blank">📍 Birtamode, Jhapa</a>
+<div class="resume-container">
+    <div class="sidebar">
+        <img src="https://i.imgur.com/your_image_here.jpg" alt="BISHAL KARKI" class="profile-img">
+        
+        <h2>Contact</h2>
+        <a href="mailto:k.bishal@hotmail.com" class="contact-link">📧 k.bishal@hotmail.com</a>
+        <a href="tel:+9779818852021" class="contact-link">📞 +977 9818852021</a>
+        <a href="https://wa.me/9779818852021" class="contact-link">💬 WhatsApp Me</a>
+        <a href="https://www.google.com/maps/search/Birtamode,+Jhapa" target="_blank" class="contact-link">📍 Birtamode, Jhapa</a>
+        
+        <div class="sidebar-item">
+            [span_2](start_span)<strong>Birthday:</strong> 09/03/1997[span_2](end_span)
         </div>
-    </header>
-
-    <section>
-        <h2>Profile</h2>
-        [span_0](start_span)<p>Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.[span_0](end_span)</p>
-    </section>
-
-    <section>
-        <h2>Professional Experience</h2>
-        <div class="item">
-            <div class="item-header">
-                <span>B&C Medical College Teaching Hospital & Research Center</span>
-                <span>2020 – Present</span>
-            </div>
-            [span_1](start_span)<div class="sub-text">Cashier - Birtamode, Nepal[span_1](end_span)</div>
-            <ul>
-                [span_2](start_span)<li>Handling all billing operations along with admission and discharge of patients.[span_2](end_span)</li>
-                [span_3](start_span)<li>Processing transactions via cash and credit card payments effectively.[span_3](end_span)</li>
-                [span_4](start_span)<li>Documenting bank transactions, checks, and online deposits proactively.[span_4](end_span)</li>
-                [span_5](start_span)<li>Enforcing credit policies to ensure timely payments from defaulters.[span_5](end_span)</li>
-                [span_6](start_span)<li>Coordinating with accounting to ensure timely supplier payments.[span_6](end_span)</li>
-            </ul>
+        <div class="sidebar-item">
+            [span_3](start_span)<strong>License:</strong> Two Wheeler and Light Vehicle[span_3](end_span)
         </div>
 
-        <div class="item">
-            <div class="item-header">
-                <span>Avinash Hardware</span>
-                <span>2017 – 2020</span>
-            </div>
-            [span_7](start_span)<div class="sub-text">Salesman - Kathmandu, Nepal[span_7](end_span)</div>
-            <ul>
-                <li>Greeting customers and providing product feature/pricing information.</li>
-                <li>Ensuring racks are fully stocked and informing customers of discounts.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
         <h2>Education</h2>
-        <div class="item">
-            <div class="item-header">
-                <span>Bachelor's in Business Studies (BBS)</span>
-                <span>2017 – Present</span>
-            </div>
-            <div class="sub-text">Pashupati Multiple Campus (Tribhuvan University), Kathmandu</div>
+        <div class="sidebar-item">
+            <strong>Bachelor's Degree</strong><br>
+            [span_4](start_span)Tribhuvan University (2017-present)[span_4](end_span)<br>
+            [span_5](start_span)Pashupati Multiple Campus[span_5](end_span)
         </div>
-        <div class="item">
-            <div class="item-header">
-                <span>Intermediate (+2 in Business Studies)</span>
-                <span>2013 – 2016</span>
-            </div>
-            <div class="sub-text">Bishwajyoti Boarding Higher Secondary School, Jhapa</div>
+        <div class="sidebar-item">
+            <strong>Intermediate (+2)</strong><br>
+            [span_6](start_span)Bishwajyoti Boarding Higher Secondary School (2013-2016)[span_6](end_span)
         </div>
-    </section>
 
-    <section>
-        <h2>Skills & Training</h2>
-        <div>
-            [span_8](start_span)<span class="skills-tag">Diploma in Computer Application[span_8](end_span)</span>
-            [span_9](start_span)<span class="skills-tag">Computerized Accounting Package[span_9](end_span)</span>
-            [span_10](start_span)<span class="skills-tag">Computer Hardware[span_10](end_span)</span>
-            <span class="skills-tag">Customer Service</span>
-            <span class="skills-tag">Attention to Detail</span>
-            <span class="skills-tag">Communication Skills</span>
-        </div>
-    </section>
-
-    <section>
         <h2>Interests</h2>
-        <p>Drawing & Sketching, Swimming, Indoor Games, Reading Sci-Fi, Surfing Internet.</p>
-    </section>
+        <div class="sidebar-item">
+            [span_7](start_span)Drawing & Sketching, Swimming, Indoor Games, Reading Sci-Fi, Surfing Internet[span_7](end_span)
+        </div>
+    </div>
 
-    <section style="font-size: 0.8em; color: #888; border-top: 1px solid #eee; padding-top: 10px;">
-        <p><strong>Declaration:</strong> I hereby declare that all the details provided above are true to the best of my knowledge.</p>
-        <p><strong>License:</strong> Two Wheeler and Light Vehicle</p>
-        <p><strong>DOB:</strong> 09/03/1997</p>
-    </section>
+    <div class="main-content">
+        <div class="header-section">
+            [span_8](start_span)<h1>BISHAL KARKI</h1>[span_8](end_span)
+            [span_9](start_span)<div class="title">CASHIER</div>[span_9](end_span)
+        </div>
+
+        <h3>Profile</h3>
+        [span_10](start_span)<p>Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.[span_10](end_span)</p>
+
+        <h3>Training</h3>
+        <ul>
+            [span_11](start_span)<li>Diploma in Computer Application[span_11](end_span)</li>
+            [span_12](start_span)<li>Computerize Accounting Package[span_12](end_span)</li>
+            [span_13](start_span)<li>Diploma in Computer Hardware[span_13](end_span)</li>
+        </ul>
+
+        <h3>Professional Experience</h3>
+        <div class="exp-item">
+            <div class="exp-row">
+                <span>B&C Medical College Teaching Hospital</span>
+                [span_14](start_span)<span>2020-Present</span>[span_14](end_span)
+            </div>
+            [span_15](start_span)<div class="location-text">Cashier - Birtamode, Nepal[span_15](end_span)</div>
+            <ul>
+                [span_16](start_span)<li>Handling all billing operations along with admission and discharge of patients.[span_16](end_span)</li>
+                [span_17](start_span)<li>Process transactions to the cash register by effectively handling cash and credit card payments.[span_17](end_span)</li>
+                [span_18](start_span)<li>Document bank transactions by processing checks and online deposits.[span_18](end_span)</li>
+                [span_19](start_span)<li>Enforce credit policies for patients with extended credits.[span_19](end_span)</li>
+                [span_20](start_span)<li>Coordinate with accounting for timely payments to suppliers.[span_20](end_span)</li>
+            </ul>
+        </div>
+
+        <div class="exp-item">
+            <div class="exp-row">
+                <span>Avinash Hardware</span>
+                [span_21](start_span)<span>2017-2020</span>[span_21](end_span)
+            </div>
+            [span_22](start_span)<div class="location-text">Salesman - Kathmandu, Nepal[span_22](end_span)</div>
+            <ul>
+                [span_23](start_span)<li>Greeting and directing customers and providing product features and pricing.[span_23](end_span)</li>
+                [span_24](start_span)<li>Answering customers' questions about specific services.[span_24](end_span)</li>
+                [span_25](start_span)<li>Ensuring racks are fully stocked and informing customers about discounts.[span_25](end_span)</li>
+            </ul>
+        </div>
+
+        <h3>Skills</h3>
+        [span_26](start_span)<p>Friendly and positive attitude, Excellent customer service, Communication skills, Attention to detail, Quick Learner.[span_26](end_span)</p>
+
+        <p style="margin-top:40px; font-size: 0.8em; color: #888;">
+            [span_27](start_span)<strong>Declaration:</strong> I hereby declare that all the details provided above are true to the best of my knowledge.[span_27](end_span)
+        </p>
+    </div>
 </div>
 
 </body>

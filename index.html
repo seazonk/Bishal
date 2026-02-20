@@ -4,227 +4,252 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bishal Karki - Resume</title>
+
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-    body {
-        background-color: #f4f4f4;
-    }
+body{
+    background:#f4f4f4;
+}
 
-    .container {
-        width: 900px;
-        margin: 30px auto;
-        background: #ffffff;
-        display: flex;
-        box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    }
+.container{
+    width:900px;
+    margin:30px auto;
+    background:#fff;
+    display:flex;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
 
-    .left-column {
-        width: 35%;
-        background-color: #1f2a36;
-        color: #ffffff;
-        padding: 30px 20px;
-    }
+.left{
+    width:35%;
+    background:#1f2a36;
+    color:#fff;
+    padding:30px 20px;
+    text-align:center;
+}
 
-    .right-column {
-        width: 65%;
-        padding: 30px 30px;
-    }
+.right{
+    width:65%;
+    padding:30px;
+}
 
-    .name {
-        font-size: 32px;
-        font-weight: bold;
-        letter-spacing: 2px;
-    }
+.profile-img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #00bcd4;
+    margin-bottom:20px;
+}
 
-    .surname {
-        font-size: 32px;
-        font-weight: bold;
-        color: #00bcd4;
-        letter-spacing: 2px;
-    }
+.name{
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
 
-    .job-title {
-        margin-top: 10px;
-        font-size: 16px;
-        letter-spacing: 1px;
-    }
+.surname{
+    font-size:28px;
+    font-weight:bold;
+    color:#00bcd4;
+    letter-spacing:2px;
+}
 
-    .section-title {
-        margin-top: 25px;
-        margin-bottom: 10px;
-        font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border-bottom: 1px solid rgba(255,255,255,0.3);
-        padding-bottom: 5px;
-    }
+.title{
+    font-size:14px;
+    margin-top:8px;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
 
-    .right-column .section-title {
-        border-bottom: 2px solid #1f2a36;
-        color: #1f2a36;
-    }
+.section{
+    margin-top:25px;
+    text-align:left;
+}
 
-    .contact p, .left-column p {
-        font-size: 14px;
-        margin-bottom: 8px;
-        line-height: 1.5;
-    }
+.section h3{
+    font-size:14px;
+    text-transform:uppercase;
+    border-bottom:1px solid rgba(255,255,255,0.3);
+    padding-bottom:5px;
+    margin-bottom:10px;
+}
 
-    ul {
-        list-style: none;
-    }
+.right .section h3{
+    border-bottom:2px solid #1f2a36;
+    color:#1f2a36;
+}
 
-    ul li {
-        font-size: 14px;
-        margin-bottom: 6px;
-        line-height: 1.5;
-    }
+.section p, .section li{
+    font-size:13px;
+    margin-bottom:7px;
+    line-height:1.5;
+}
 
-    .experience-item, .education-item {
-        margin-bottom: 20px;
-    }
+ul{
+    list-style:none;
+}
 
-    .job-role {
-        font-weight: bold;
-        font-size: 15px;
-    }
+.job{
+    margin-bottom:20px;
+}
 
-    .company {
-        font-size: 14px;
-        font-weight: bold;
-    }
+.job-title{
+    font-weight:bold;
+    font-size:15px;
+}
 
-    .date-location {
-        font-size: 13px;
-        color: #555;
-        margin-bottom: 8px;
-    }
+.company{
+    font-weight:bold;
+    font-size:14px;
+}
 
-    .profile-text {
-        font-size: 14px;
-        line-height: 1.6;
-        margin-top: 10px;
-    }
+.date{
+    font-size:13px;
+    color:#555;
+    margin-bottom:8px;
+}
 
-    .declaration {
-        margin-top: 15px;
-        font-size: 14px;
-    }
-
+.profile-text{
+    font-size:14px;
+    line-height:1.6;
+}
 </style>
 </head>
+
 <body>
 
 <div class="container">
 
-    <div class="left-column">
+    <!-- LEFT COLUMN -->
+    <div class="left">
+
+        <img src="IMG_8833.HEIF" alt="Profile Photo" class="profile-img">
+
         <div class="name">BISHAL</div>
         <div class="surname">KARKI</div>
-        <div class="job-title">CASHIER</div>
+        <div class="title">CASHIER</div>
 
-        <div class="section-title">Contact</div>
-        <div class="contact">
+        <div class="section">
+            <h3>Contact</h3>
             <p>Email: k.bishal@hotmail.com</p>
             <p>Phone: +977 9818852021</p>
-            <p>WhatsApp: +977 9818852021</p>
             <p>Location: Birtamode, Jhapa</p>
             <p>DOB: 09/03/1997</p>
             <p>License: Two Wheeler & Light Vehicle</p>
         </div>
 
-        <div class="section-title">Skills</div>
-        <ul>
-            <li>Friendly and Positive Attitude</li>
-            <li>Excellent Customer Service</li>
-            <li>Excellent Communication Skills</li>
-            <li>Attention to Detail</li>
-            <li>Quick Learner</li>
-        </ul>
+        <div class="section">
+            <h3>Skills</h3>
+            <ul>
+                <li>Friendly and Positive Attitude</li>
+                <li>Excellent Customer Service</li>
+                <li>Excellent Communication Skills</li>
+                <li>Attention to Detail</li>
+                <li>Quick Learner</li>
+            </ul>
+        </div>
 
-        <div class="section-title">Interests</div>
-        <ul>
-            <li>Drawing & Sketching</li>
-            <li>Swimming</li>
-            <li>Indoor Games</li>
-            <li>Reading Novels & Sci-Fi</li>
-            <li>Surfing Internet</li>
-        </ul>
+        <div class="section">
+            <h3>Interests</h3>
+            <ul>
+                <li>Drawing & Sketching</li>
+                <li>Swimming</li>
+                <li>Indoor Games</li>
+                <li>Reading Novels & Sci-Fi</li>
+                <li>Surfing Internet</li>
+            </ul>
+        </div>
 
-        <div class="section-title">Training</div>
-        <ul>
-            <li>Diploma in Computer Application</li>
-            <li>Computerized Accounting Package</li>
-            <li>Diploma in Computer Hardware</li>
-        </ul>
+        <div class="section">
+            <h3>Training</h3>
+            <ul>
+                <li>Diploma in Computer Application</li>
+                <li>Computerized Accounting Package</li>
+                <li>Diploma in Computer Hardware</li>
+            </ul>
+        </div>
+
     </div>
 
-    <div class="right-column">
+    <!-- RIGHT COLUMN -->
+    <div class="right">
 
-        <div class="section-title">Profile</div>
-        <p class="profile-text">
-            Secure a responsible career opportunity to fully utilize my training and skills, 
-            while making a significant contribution to the success of the company.
-        </p>
-
-        <div class="section-title">Professional Experience</div>
-
-        <div class="experience-item">
-            <div class="job-role">Cashier</div>
-            <div class="company">B&C Medical College Teaching Hospital & Research Center</div>
-            <div class="date-location">2020 – Present | Birtamode, Nepal</div>
-            <ul>
-                <li>Handling billing operations including admission and discharge of patients.</li>
-                <li>Processing cash and credit card transactions efficiently.</li>
-                <li>Documenting bank transactions including checks and online deposits.</li>
-                <li>Enforcing credit policies and monitoring extended credits.</li>
-                <li>Coordinating with accounting department for supplier payments.</li>
-                <li>Recording payments from suppliers, cafeteria, and pharmacy into databases.</li>
-            </ul>
+        <div class="section">
+            <h3>Profile</h3>
+            <p class="profile-text">
+                Secure a responsible career opportunity to fully utilize my training 
+                and skills, while making a significant contribution to the success 
+                of the company.
+            </p>
         </div>
 
-        <div class="experience-item">
-            <div class="job-role">Salesman</div>
-            <div class="company">Avinash Hardware</div>
-            <div class="date-location">2017 – 2020 | Kathmandu, Nepal</div>
-            <ul>
-                <li>Greeting and directing customers.</li>
-                <li>Providing product information, pricing, and after-sales services.</li>
-                <li>Answering customer inquiries regarding products and services.</li>
-                <li>Ensuring racks are fully stocked.</li>
-                <li>Informing customers about discounts and special offers.</li>
-            </ul>
+        <div class="section">
+            <h3>Professional Experience</h3>
+
+            <div class="job">
+                <div class="job-title">Cashier</div>
+                <div class="company">B&C Medical College Teaching Hospital & Research Center</div>
+                <div class="date">2020 – Present | Birtamode, Nepal</div>
+                <ul>
+                    <li>Handling billing operations including admission and discharge of patients.</li>
+                    <li>Processing cash and credit card transactions efficiently.</li>
+                    <li>Documenting bank transactions including checks and online deposits.</li>
+                    <li>Enforcing credit policies and monitoring extended credits.</li>
+                    <li>Coordinating with accounting department for supplier payments.</li>
+                    <li>Recording payments from suppliers, cafeteria, and pharmacy into databases.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-title">Salesman</div>
+                <div class="company">Avinash Hardware</div>
+                <div class="date">2017 – 2020 | Kathmandu, Nepal</div>
+                <ul>
+                    <li>Greeting and directing customers.</li>
+                    <li>Providing product information and after-sales services.</li>
+                    <li>Answering customer inquiries.</li>
+                    <li>Ensuring racks are fully stocked.</li>
+                    <li>Informing customers about offers and discounts.</li>
+                </ul>
+            </div>
+
         </div>
 
-        <div class="section-title">Education</div>
+        <div class="section">
+            <h3>Education</h3>
 
-        <div class="education-item">
-            <div class="job-role">Bachelor's Degree (BBS)</div>
-            <div class="company">Tribhuvan University</div>
-            <div class="date-location">2017 – Present | Kathmandu, Nepal</div>
+            <div class="job">
+                <div class="job-title">Bachelor's Degree (BBS)</div>
+                <div class="company">Tribhuvan University</div>
+                <div class="date">2017 – Present | Kathmandu, Nepal</div>
+            </div>
+
+            <div class="job">
+                <div class="job-title">+2 in Business Studies</div>
+                <div class="company">Bishwajyoti Boarding Higher Secondary School</div>
+                <div class="date">2013 – 2016 | Jhapa, Nepal</div>
+            </div>
+
+            <div class="job">
+                <div class="job-title">SLC</div>
+                <div class="company">Dipjan English Boarding School</div>
+                <div class="date">Jhapa, Nepal</div>
+            </div>
         </div>
 
-        <div class="education-item">
-            <div class="job-role">Intermediate (+2 in Business Studies)</div>
-            <div class="company">Bishwajyoti Boarding Higher Secondary School</div>
-            <div class="date-location">2013 – 2016 | Laxmipur, Jhapa</div>
+        <div class="section">
+            <h3>Declaration</h3>
+            <p>
+                I hereby declare that all the details provided above are true 
+                to the best of my knowledge.
+            </p>
         </div>
-
-        <div class="education-item">
-            <div class="job-role">SLC</div>
-            <div class="company">Dipjan English Boarding School</div>
-            <div class="date-location">Dangibari, Jhapa</div>
-        </div>
-
-        <div class="section-title">Declaration</div>
-        <p class="declaration">
-            I hereby declare that all the details provided above are true to the best of my knowledge.
-        </p>
 
     </div>
 
